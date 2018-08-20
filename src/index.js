@@ -1,4 +1,4 @@
-const { def, on, wired } = require("capsid");
+const { def, on, wired } = require("capsid")
 
 class Mirroring {
   @wired(".dest")
@@ -8,8 +8,8 @@ class Mirroring {
 
   @on("input")
   onReceiveData() {
-    this.dest.textContent = this.src.value;
+    this.dest.textContent = this.src.value
   }
 }
 
-def("mirroring", Mirroring);
+def("mirroring", Mirroring)
